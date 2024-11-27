@@ -44,7 +44,7 @@ ol {
   grid-template-columns: 711fr 399fr;
   grid-template-rows: 1fr;
   align-items: end;
-  margin: 129px auto 0px;
+  margin: 133px auto 0px auto;
   gap: 30px;
 } 
 
@@ -254,6 +254,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   column-gap: 15px;
+  align-items: center;
 }
 
 .search-form__label-text {

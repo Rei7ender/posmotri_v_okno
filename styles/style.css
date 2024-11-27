@@ -12,6 +12,8 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
+  display: flex;
+  align-items: center;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -45,8 +47,6 @@ ol {
   grid-template-rows: 1fr;
   align-items: end;
   margin: 0px auto;
-  position: relative;
-  top: 128px;
   gap: 30px;
 } 
 

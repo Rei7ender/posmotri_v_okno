@@ -116,7 +116,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline 1px;
-  text-underline-offset: 4px;
+  text-underline-offset: 2px;
 }
 
 .content__card-link:focus {
@@ -127,11 +127,11 @@ ol {
   outline: 1px solid white;
 }
 
-.content__card-link_current {
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: #545050;
 }
 
@@ -142,8 +142,11 @@ ol {
 }
 
 .content__video-card-title {
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
   line-height: 30px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -199,8 +202,11 @@ ol {
 }
 
 .search-form__label {
+  gap: 5px;
+  display: flex;
   width: fit-content;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -232,20 +238,12 @@ ol {
   border: 1px solid #fff;
 }
 
-.search-form__fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 4.5px;
-}
-
 .search-form__checkbox-list {
   display: flex;
   column-gap: 15px;
 }
 
 .search-form__label-text {
-  padding-bottom: 2px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -254,12 +252,14 @@ ol {
   vertical-align: middle;
 }
 
-.search-form__label .search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline 1px;
   text-underline-offset: 2px;
 }
 
 .search-form__pseudo-checkbox {
+  margin-top: 0.5px;
+  margin-left: 0.5px;
   width: 19px;
   height: 19px;
   border: #fff 1px solid;
@@ -269,7 +269,7 @@ ol {
 }
 
 .search-form__checkbox[type="checkbox"]:checked + .search-form__pseudo-checkbox {
-  margin-left: 2.7px;
+  margin: 0px 2px;
   width: 16px;
   height: 16px;
   outline: #fff 1px solid;
